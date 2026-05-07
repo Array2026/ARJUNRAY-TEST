@@ -21,17 +21,45 @@ ProductController → CRUD produk
 Controller mengakses Model untuk operasi database.
 Data dikirim ke Blade template (resources/views) untuk ditampilkan di browser.
 
-Instalasi
-Clone repository:
+## Instalasi
+
+```bash
 git clone https://github.com/Array2026/ARJUNRAY-TEST.git
 cd ARJUNRAY-TEST
-Install dependensi PHP (gunakan Composer):
+
 composer install
-Jalankan migration untuk membuat tabel:
+```
+
+Buat file `.env` lalu isi konfigurasi database:
+
+```env
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=
+APP_DEBUG=true
+APP_URL=http://localhost
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nama_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Generate key dan jalankan migration:
+
+```bash
+php artisan key:generate
 php artisan migrate
-Jalankan aplikasi di server lokal:
-php -S localhost:8000 -t public
-Buka browser di http://localhost:8000
+php artisan serve
+```
+
+Buka aplikasi di:
+
+```text
+http://127.0.0.1:8000
+```
 
 Catatan
 File .env bisa diubah untuk konfigurasi database
