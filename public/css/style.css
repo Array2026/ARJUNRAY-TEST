@@ -1,0 +1,667 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f172a; /* dark background */
+    color: #e5e7eb;
+}
+
+/* =========================
+   LOGIN CARD
+========================= */
+.login-container {
+    background: #111827; /* dark card */
+    border: 1px solid #1f2937;
+    padding: 40px;
+    border-radius: 16px;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.login-container h1 {
+    color: #f9fafb;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #374151;
+    background: #0b1220;
+    color: #e5e7eb;
+    outline: none;
+    transition: 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 2px rgba(56,189,248,0.2);
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   ALERT
+========================= */
+.alert {
+    background: #7f1d1d;
+    color: #fecaca;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   ERROR
+========================= */
+.error {
+    color: #f87171;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* =========================
+   REGISTER LINK
+========================= */
+.register-link {
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 400px) {
+    .login-container {
+        width: 90%;
+        padding: 25px;
+    }
+}
+
+/* =========================
+   FORM CONTAINER
+========================= */
+.form-container {
+    background: #111827; /* dark card */
+    border: 1px solid #1f2937;
+    padding: 40px;
+    border-radius: 16px;
+    width: 380px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    text-align: center;
+    color: #e5e7eb;
+}
+
+.form-container h1 {
+    color: #f9fafb;
+    margin-bottom: 10px;
+}
+
+.form-container .subtitle {
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #374151;
+    background: #0b1220;
+    color: #e5e7eb;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-container input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 2px rgba(56,189,248,0.2);
+}
+
+.full-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.full-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* BACK BUTTON */
+.back-area {
+    margin-top: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: #1f2937;
+    color: #38bdf8;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background: #111827;
+    transform: translateY(-1px);
+}
+
+/* ERROR */
+.error {
+    color: #f87171;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* SUCCESS ALERT */
+.alert-success {
+    background: #064e3b;
+    color: #bbf7d0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* =========================
+   DASHBOARD CONTAINER
+========================= */
+.dashboard-container {
+    width: 400px;
+    background: #111827; /* dark card */
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    text-align: center;
+    color: #e5e7eb;
+    animation: fadeIn 0.5s ease;
+}
+
+.dashboard-container h1 {
+    color: #f9fafb;
+    margin-bottom: 20px;
+}
+
+.dashboard-container hr {
+    border: none;
+    height: 1px;
+    background: #374151;
+    margin: 20px 0;
+}
+
+/* Menu Buttons */
+.menu-btn {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Logout Button */
+.logout-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #dc2626; /* red */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.logout-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Animation for fadeIn */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================
+   TABLE CONTAINER
+========================= */
+.table-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #1f2937; /* dark card */
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    color: #e5e7eb;
+    animation: fadeIn 0.5s ease;
+}
+
+.table-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #111827; /* dark table background */
+}
+
+.modern-table th,
+.modern-table td {
+    padding: 12px;
+    text-align: center;
+    color: #e5e7eb;
+}
+
+.modern-table thead {
+    background: #2563eb; /* blue header */
+    color: white;
+}
+
+.modern-table tbody tr {
+    border-bottom: 1px solid #374151;
+    transition: 0.2s;
+}
+
+.modern-table tbody tr:hover {
+    background: #374151;
+}
+
+/* Button Group */
+.action-group {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.add-btn,
+.edit-btn,
+.delete-btn,
+.back-btn {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #fff;
+}
+
+/* Add Button */
+.add-btn {
+    background: #10b981; /* green */
+}
+
+/* Edit Button */
+.edit-btn {
+    background: #f59e0b; /* amber */
+    color: #111827;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: #ef4444; /* red */
+}
+
+/* Back Button */
+.back-btn {
+    background: #2563eb; /* blue */
+}
+
+/* Hover Effects */
+.add-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover,
+.back-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Success Alert */
+.success-alert {
+    background: #064e3b;
+    color: #d1fae5;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Top Action spacing */
+.top-action {
+    margin-bottom: 15px;
+}
+
+/* Back Area spacing */
+.back-area {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .modern-table thead {
+        display: none;
+    }
+
+    .modern-table, 
+    .modern-table tbody,
+    .modern-table tr,
+    .modern-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .modern-table tr {
+        margin-bottom: 15px;
+        background: #1f2937;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .modern-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .modern-table td::before {
+        position: absolute;
+        left: 15px;
+        top: 12px;
+        font-weight: bold;
+        text-align: left;
+        color: #9ca3af;
+    }
+
+    .modern-table td:nth-child(1)::before { content: "Name"; }
+    .modern-table td:nth-child(2)::before { content: "Email"; }
+    .modern-table td:nth-child(3)::before { content: "Aksi"; }
+
+    .action-group {
+        justify-content: flex-end;
+    }
+}
+
+/* =========================
+   FORM CONTAINER
+========================= */
+.form-container {
+    width: 420px;
+    max-width: 95%;
+    margin: 50px auto;
+    background: #1f2937; /* dark card */
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    color: #e5e7eb;
+    animation: fadeIn 0.5s ease;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #f3f4f6;
+}
+
+.form-container hr {
+    border: none;
+    height: 1px;
+    background: #374151;
+    margin: 15px 0 25px 0;
+}
+
+/* Input Fields */
+.form-container input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #374151;
+    background: #111827;
+    color: #e5e7eb;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-container input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37,99,235,0.5);
+}
+
+/* Buttons */
+.full-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.add-btn {
+    background: #10b981; /* green */
+}
+
+.back-btn {
+    background: #2563eb; /* blue */
+}
+
+.full-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Error Messages */
+.error {
+    color: #f87171;
+    font-size: 14px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+/* Success Alert */
+.success-alert {
+    background: #064e3b;
+    color: #d1fae5;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Back Area */
+.back-area {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .form-container {
+        padding: 25px;
+    }
+}
+
+/* Disabled Input */
+.disabled-input {
+    background: #374151;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Tombol Edit khusus */
+.edit-btn {
+    background: #f59e0b; /* amber */
+    color: #111827;
+}
+
+.edit-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Detail Container */
+.detail-container {
+    width: 450px;
+    max-width: 90%;
+    background: #1f2937; /* dark gray */
+    color: #f9fafb;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    margin: 40px auto;
+    text-align: center;
+}
+
+.detail-container h1 {
+    margin-bottom: 20px;
+    color: #f9fafb;
+}
+
+/* Detail Card */
+.detail-card {
+    margin-top: 20px;
+}
+
+/* Detail Item */
+.detail-item {
+    background: #111827;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border-left: 4px solid #3b82f6; /* blue accent */
+    transition: 0.3s;
+    text-align: left;
+}
+
+.detail-item:hover {
+    transform: translateX(3px);
+    background: #1e293b;
+}
+
+.detail-item span {
+    display: block;
+    color: #9ca3af; /* light gray */
+    font-size: 13px;
+}
+
+.detail-item strong {
+    color: #f9fafb;
+    font-size: 16px;
+}
+
+/* Back button */
+.back-area {
+    margin-top: 20px;
+}
+
+button.back-btn {
+    background: #6366f1; /* purple */
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button.back-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
